@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface OANSNumber : NSObject {
-    
+
     enum { INT, UINT, DOUBLE } _type;
     union {
         long long i;
@@ -17,6 +17,23 @@
         double d;
     } _value;
 }
+
+#pragma mark - Factory Methods
++ (OANSNumber *)numberWithChar:(char)value;
++ (OANSNumber *)numberWithUnsignedChar:(unsigned char)value;
++ (OANSNumber *)numberWithShort:(short)value;
++ (OANSNumber *)numberWithUnsignedShort:(unsigned short)value;
++ (OANSNumber *)numberWithInt:(int)value;
++ (OANSNumber *)numberWithUnsignedInt:(unsigned int)value;
++ (OANSNumber *)numberWithLong:(long)value;
++ (OANSNumber *)numberWithUnsignedLong:(unsigned long)value;
++ (OANSNumber *)numberWithLongLong:(long long)value;
++ (OANSNumber *)numberWithUnsignedLongLong:(unsigned long long)value;
++ (OANSNumber *)numberWithFloat:(float)value;
++ (OANSNumber *)numberWithDouble:(double)value;
++ (OANSNumber *)numberWithBool:(BOOL)value;
++ (OANSNumber *)numberWithInteger:(NSInteger)value;
++ (OANSNumber *)numberWithUnsignedInteger:(NSUInteger)value;
 
 #pragma mark - Init Methods
 - (instancetype)initWithChar:(char)value;

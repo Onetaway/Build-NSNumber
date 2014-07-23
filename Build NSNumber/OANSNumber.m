@@ -43,6 +43,83 @@
 } while(0)
 
 
+#pragma mark - Factory Methods
++ (OANSNumber *)numberWithChar:(char)value
+{
+    return [[OANSNumber alloc] initWithChar:value];
+}
+
++ (OANSNumber *)numberWithUnsignedChar:(unsigned char)value
+{
+    return [[OANSNumber alloc] initWithUnsignedChar:value];
+}
+
++ (OANSNumber *)numberWithShort:(short)value
+{
+    return [[OANSNumber alloc] initWithShort:value];
+}
+
++ (OANSNumber *)numberWithUnsignedShort:(unsigned short)value
+{
+    return [[OANSNumber alloc] initWithUnsignedShort:value];
+}
+
++ (OANSNumber *)numberWithInt:(int)value
+{
+    return [[OANSNumber alloc] initWithInt:value];
+}
+
++ (OANSNumber *)numberWithUnsignedInt:(unsigned int)value
+{
+    return [[OANSNumber alloc] initWithUnsignedInt:value];
+}
+
++ (OANSNumber *)numberWithLong:(long)value
+{
+    return [[OANSNumber alloc] initWithLong:value];
+}
+
++ (OANSNumber *)numberWithUnsignedLong:(unsigned long)value
+{
+    return [[OANSNumber alloc] initWithUnsignedLong:value];
+}
+
++ (OANSNumber *)numberWithLongLong:(long long)value
+{
+    return [[OANSNumber alloc] initWithLongLong:value];
+}
+
++ (OANSNumber *)numberWithUnsignedLongLong:(unsigned long long)value
+{
+    return [[OANSNumber alloc] initWithUnsignedLongLong:value];
+}
+
++ (OANSNumber *)numberWithFloat:(float)value
+{
+    return [[OANSNumber alloc] initWithFloat:value];
+}
+
++ (OANSNumber *)numberWithDouble:(double)value
+{
+    return [[OANSNumber alloc] initWithDouble:value];
+}
+
++ (OANSNumber *)numberWithBool:(BOOL)value
+{
+    return [[OANSNumber alloc] initWithBool:value];
+}
+
++ (OANSNumber *)numberWithInteger:(NSInteger)value
+{
+    return [[OANSNumber alloc] initWithInteger:value];
+}
+
++ (OANSNumber *)numberWithUnsignedInteger:(NSUInteger)value
+{
+    return [[OANSNumber alloc] initWithUnsignedInteger:value];
+}
+
+
 
 #pragma mark - Init Methods
 - (instancetype)initWithChar:(char)value

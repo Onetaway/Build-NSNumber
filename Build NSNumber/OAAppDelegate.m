@@ -7,12 +7,22 @@
 //
 
 #import "OAAppDelegate.h"
+#import "OANSNumber.h"
 
 @implementation OAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    OANSNumber *num1 = [[OANSNumber alloc] initWithInt:1];
+    OANSNumber *num2 = [[OANSNumber alloc] initWithLong:1];
+    
+    if ([num1 isEqualToNumber:num2]) {
+        NSLog(@"num1 == num2");
+    } else {
+        NSLog(@"num1 != num2");
+    }
+    
     return YES;
 }
 							
